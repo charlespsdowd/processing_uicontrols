@@ -1,3 +1,6 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
 
 interface ButtonDelegate {
   void buttonClicked(Button button);

@@ -1,3 +1,6 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
 
 
 class MainViewController extends ViewController implements ButtonDelegate, ScrollBarDelegate {

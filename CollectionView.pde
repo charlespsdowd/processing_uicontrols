@@ -1,3 +1,8 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
+
+
 class Size {
   int width;
   int height;

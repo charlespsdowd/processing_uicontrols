@@ -1,3 +1,7 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
+
 
 class Debug {
   boolean on = false;

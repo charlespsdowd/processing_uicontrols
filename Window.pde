@@ -1,3 +1,8 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
+
+
 class Window extends View {
   Window(int x, int y, int w, int h) {
     super(x, y, w, h);

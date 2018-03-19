@@ -1,3 +1,6 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
 
 
 class CollectionViewController extends ScrollViewController implements CollectionViewDelegate, CollectionViewDataSource {

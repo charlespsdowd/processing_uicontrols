@@ -1,3 +1,8 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
+
+
 class GeneralCellView extends CellView {
   PImage image;
   String name;
