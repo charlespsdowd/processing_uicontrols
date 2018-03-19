@@ -3,7 +3,7 @@
 // 
 
 
-Application app;
+Processable app;
 
 void setup() {
   //fullScreen();
@@ -28,4 +28,12 @@ void mouseDragged() {
 
 void mouseReleased() {
   app.mouseReleased();
+}
+
+void keyPressed() {
+  app.keyPressed();
+}
+
+void keyReleased() {
+  app.keyReleased();
 }

@@ -3,7 +3,7 @@
 // 
 
 
-class View implements Processable {
+class View {
   String title = null;
 
   ViewController vc = null;

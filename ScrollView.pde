@@ -171,7 +171,7 @@ class ScrollView extends View implements ScrollBarDelegate {
         offsetSize = (lengthOfContent - sizeX);
         fromOffset = round(fromPos*offsetSize);
         toOffset = round(toPos*offsetSize);
-        // The delaegate is passed the absolute values in window position offsets
+        // The delegate is passed the absolute values in window position offsets
         // Where in the document, the pixel position to offset for either the x -or- y axis
         delegate.scrollViewDidScrollHorizontal(this, toOffset, fromOffset);
         break;
@@ -180,7 +180,7 @@ class ScrollView extends View implements ScrollBarDelegate {
         offsetSize = (lengthOfContent - sizeY);
         fromOffset = round(fromPos*offsetSize);
         toOffset = round(toPos*offsetSize);
-        // The delaegate is passed the absolute values in window position offsets
+        // The delegate is passed the absolute values in window position offsets
         // Where in the document, the pixel position to offset for either the x -or- y axis
         delegate.scrollViewDidScrollVertical(this, toOffset, fromOffset);
         break;

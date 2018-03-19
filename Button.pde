@@ -29,7 +29,7 @@ class Button extends View implements Actionable {
   }
 
   void addAction(Actionable action) {
-    this.action  = action;
+    this.action = action;
   }
 
   void setup() {

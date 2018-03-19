@@ -7,6 +7,8 @@ interface Processable {
   void mousePressed();
   void mouseDragged();
   void mouseReleased();
+  void keyPressed();
+  void keyReleased();
 }
 
 
@@ -16,6 +18,7 @@ interface AppDelegate {
 
 
 class Application implements AppDelegate, Processable {
+  IntDict typedKey;
   Window window;
   MainViewController mainViewController;
   DetailsViewController detailViewController;
@@ -28,6 +31,8 @@ class Application implements AppDelegate, Processable {
   void setup() {
     //fullScreen();
     size(1080, 600);
+    typedKey = new IntDict();
+
     window = new Window(0, 0, width, height);
     window.title = "App Window";
     window.bg = color(125, 125, 125);
@@ -62,5 +67,23 @@ class Application implements AppDelegate, Processable {
 
   void mouseReleased() {
     window.mouseReleased();
+  }
+
+  void keyPressed() {
+    if (!typedKey.hasKey(""+key+"")) {
+      typedKey.set(""+key+"", 1);
+      String[] theKeys = typedKey.keyArray();
+      String keys = "";
+      for (int i = 0; i < theKeys.length; i ++) {
+        keys += theKeys[i];
+      }
+      print("Keys typed: " + keys + "\n");
+    }
+  }
+
+  void keyReleased() {
+    if (typedKey.hasKey(""+key+"")) {
+      typedKey.remove(""+key+"");
+    }
   }
 }
