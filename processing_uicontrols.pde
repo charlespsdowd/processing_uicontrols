@@ -1,5 +1,5 @@
 //
-// 2018 Copyright (c) Charles Dowd
+// (c) 2018 Copyright Charles Dowd
 // 
 Debug debug = new Debug(false);
 
