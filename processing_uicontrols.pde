@@ -1,3 +1,6 @@
+//
+// 2018 Copyright (c) Charles Dowd
+// 
 Debug debug = new Debug(false);
 
 Window window;
