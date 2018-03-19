@@ -32,4 +32,5 @@ The *View* is the UI element an the *ViewController* is a basedline implmention 
 1. class GeneralCollectionViewController extends CollectionViewController
 1. class MainViewController extends ViewController
 
-
+# How to use this repository
+Start by reviewing the file **processing_uicontrols.pde** as it congatins a sample _app_ using a Window and a CollectionView together. 
