@@ -2,6 +2,11 @@
 // 2018 Copyright (c) Charles Dowd
 // 
 
+
+interface Actionable {
+  void execute();
+}
+
 interface ButtonDelegate {
   void buttonClicked(Button button);
 }
