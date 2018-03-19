@@ -29,7 +29,6 @@ class SliderButton extends Button implements ButtonDelegate {
 
   void draw() {
     //willDraw();
-    debug.debug("SliderButton.draw() " + title  + "\n");
     super.draw();
   }
 

@@ -50,7 +50,6 @@ class ScrollView extends View implements ScrollBarDelegate {
   }
 
   void draw() {
-    debug.debug("ScrollView.draw() " + title + "\n");
     this.updateScrollBarSizeFromDelegate()
       .updateScrollBarsToAddFromDelegate();
     super.draw();
@@ -164,7 +163,6 @@ class ScrollView extends View implements ScrollBarDelegate {
     int fromOffset = 0, toOffset = 0;
     int lengthOfContent = 1, offsetSize = 1;
     float size = max(0.1, scrollBar.size);
-    debug.debug("Scrolled " +  scrollBar.selector + " from "+ fromPos +  "  to  " + toPos +"\n");
 
     if (delegate != null) {
       switch(scrollBar.type) {

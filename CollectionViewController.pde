@@ -77,13 +77,11 @@ class CollectionViewController extends ScrollViewController implements Collectio
 
   void scrollViewDidScrollVertical(ScrollView scrollView, int toPos, int fromPos) {
     super.scrollViewDidScrollVertical(scrollView, toPos, fromPos);
-    debug.debug("CollectionViewController: toPos:  " + toPos + "fromPos: "+ fromPos + " DIFF" + (fromPos - toPos)  + "\n");
     collectionView.scrollViewVertical(toPos, fromPos);
   }
 
   void scrollViewDidScrollHorizontal(ScrollView scrollView, int toPos, int fromPos) {
     super.scrollViewDidScrollHorizontal(scrollView, toPos, fromPos);
-    debug.debug("CollectionViewController: toPos:  " + toPos + "fromPos: "+ fromPos + " DIFF" + (fromPos - toPos)  + "\n");
     collectionView.scrollViewHorizontal(toPos, fromPos);
   }
 

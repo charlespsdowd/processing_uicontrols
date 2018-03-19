@@ -56,26 +56,22 @@ class MainViewController extends ViewController implements ButtonDelegate, Scrol
 
     switch(button.selector) {
     case b1Name:
-      debug.debug(myButton.title);
+
       if (view != null) {
-        debug.on = !debug.on;
         //view.moveTo(view.x + 4, view.y + 4);
       }
       break;
     case b2Name:
-      debug.debug(myButton2.title);
       if (view != null) {
         //view.moveTo(view.x + 4, view.y - 4);
       }
       break;
     case b3Name:
-      debug.debug(myButton3.title);
       if (view != null) {
         //view.moveTo(view.x - 4, view.y - 4);
       }
       break;
     default:
-      debug.debug("None selected");
     }
   }
 
@@ -91,7 +87,5 @@ class MainViewController extends ViewController implements ButtonDelegate, Scrol
   }
 
   void scroll(ScrollBar scrollBar, float toPos, float fromPos) {
-    debug.debug("Scrolled form "+ fromPos +  "  to  " + toPos);
-    //view.moveTo(round(view.x + 100 * (toPos - fromPos)), view.y);
   }
 }

@@ -48,7 +48,6 @@ class View implements Processable {
   }
 
   void draw() {
-    debug.debug("View.draw() " + title  + "\n");
     String t = (title == null) ? "None" : title;
     handleMousePosition(mouseX, mouseY);
     if (children == null) return;

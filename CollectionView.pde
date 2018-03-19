@@ -291,8 +291,6 @@ class CollectionView extends Window implements CollectViewDataSourceDelegate, Ac
       }
       return;
     }
-
-    debug.debug(title);
   }
 
   void draw() {
@@ -332,21 +330,11 @@ class CollectionView extends Window implements CollectViewDataSourceDelegate, Ac
 
 
   void scrollViewVertical(int toPos, int fromPos) {
-    debug.debug("CollectionView: toPos:  " + toPos + "fromPos: "+ fromPos + " DIFF" + (fromPos - toPos)  + "\n");
     scrollOffsetV += (fromPos - toPos);
-    //for (int i=0; i < sections.size(); i ++) {
-    //  View sectionView = sections.get(i).sectionView;
-    //  sectionView.moveTo(sectionView.x, sectionView.y + (fromPos - toPos));
-    //}
   }
 
   void scrollViewHorizontal(int toPos, int fromPos) {
-    debug.debug("CollectionView: toPos:  " + toPos + "fromPos: "+ fromPos + " DIFF" + (fromPos - toPos)  + "\n");
     scrollOffsetH += (fromPos - toPos);
-    //for (int i=0; i < sections.size(); i ++) {
-    //  View sectionView = sections.get(i).sectionView;
-    //  sectionView.moveTo(sectionView.x + (fromPos - toPos), sectionView.y);
-    //}
   }
 
 

@@ -1,7 +1,7 @@
 //
 // (c) 2018 Copyright Charles Dowd
 // 
-Debug debug = new Debug(false);
+
 
 Application app;
 

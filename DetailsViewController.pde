@@ -37,8 +37,6 @@ class DetailsViewController extends ScrollViewController {
       buttons.add(button);
     }
 
-    debug.debug("DetailsViewController.setup() buttons: " + buttons.size() +"\n");
-
     return this;
   }
 
@@ -89,7 +87,6 @@ class DetailsViewController extends ScrollViewController {
 
   void scrollViewDidScrollVertical(ScrollView scrollView, int toPos, int fromPos) {
     super.scrollViewDidScrollVertical(scrollView, toPos, fromPos);
-    debug.debug("DetailsViewController: toPos:  " + toPos + "fromPos: "+ fromPos + " DIFF" + (fromPos - toPos)  + "\n");
 
     for (int i=0; i < buttons.size(); i ++) {
       Button button = buttons.get(i);
@@ -99,7 +96,6 @@ class DetailsViewController extends ScrollViewController {
 
   void scrollViewDidScrollHorizontal(ScrollView scrollView, int toPos, int fromPos) {
     super.scrollViewDidScrollHorizontal(scrollView, toPos, fromPos);
-    debug.debug("DetailsViewController: toPos:  " + toPos + "fromPos: "+ fromPos + " DIFF" + (fromPos - toPos)  + "\n");
     for (int i=0; i < buttons.size(); i ++) {
       Button button = buttons.get(i);
       button.moveTo(button.x + (fromPos - toPos), button.y);

@@ -16,7 +16,6 @@ interface AppDelegate {
 
 
 class Application implements AppDelegate, Processable {
-
   Window window;
   MainViewController mainViewController;
   DetailsViewController detailViewController;

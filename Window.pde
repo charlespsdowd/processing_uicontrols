@@ -13,7 +13,6 @@ class Window extends View {
 
   void draw() {
     //willDraw();
-    debug.debug("Window.draw() " + title  + "\n");
     drawRect();
     writeText();
     super.draw();

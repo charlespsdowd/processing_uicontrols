@@ -103,7 +103,5 @@ class Button extends View implements Actionable {
       buttonDelegate.buttonClicked(this);
       return;
     }
-
-    debug.debug(title);
   }
 }

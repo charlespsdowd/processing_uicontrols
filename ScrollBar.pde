@@ -60,7 +60,6 @@ class ScrollBar extends Window implements Slidable, ButtonDelegate {
   }
 
   void draw() {
-    debug.debug("ScrollBar.draw() " + title + "\n");
     this.updateTypeFromDelegate()
       .updateSizeFromDelegate()
       .updateAxes()
@@ -214,7 +213,6 @@ class ScrollBar extends Window implements Slidable, ButtonDelegate {
       delegate.scroll(this, newPos, pos); 
       break;
     default:
-      debug.debug("no button pressed on scroll bar");
     }
 
     pos = newPos;
